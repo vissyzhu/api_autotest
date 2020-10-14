@@ -19,7 +19,7 @@ class Test_GetBannerList(unittest.TestCase):
 
     def __init__(self, *args, **kwargs):
         super(Test_GetBannerList, self).__init__(*args)
-        self.url = api_homepage["getbannerlist"]  # 获取接口名称
+        self.url = api_homepage["getBannerList"]  # 获取接口名称
         confighttp.set_url(self.url)  # 将接口名称传给http配置文件中
 
     def test_getbannerlist(self):
