@@ -4,11 +4,11 @@
 """
 # 线下数据
 # common_data = {
-#     'auth': 'nJPR1ofs86XV4zPLc9mNvVjgXD0c7+r3/Tlr7jS7DeY=',  # 实时获取
+#     'auth': '051z2JFa16xdSz0vtYFa1TNFiD4z2JFx',  # 实时获取
 #
 # }
 # 线上数据
 common_data = {
-    'auth': 'nJPR1ofs86XV4zPLc9mNvVjgXD0c7+r3/Tlr7jS7DeY=',  # 实时获取
-
+    'Authorization': '7+ebe0jLOxyLndL28g84sEIF6w+zyWdRcOtRYsyW05Q=',  # 根据用户openid生成
+    'mobile': '17321050037',  # 患者的手机号
 }

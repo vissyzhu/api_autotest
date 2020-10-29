@@ -16,7 +16,7 @@ class ConfigHttp:
         www_url = http_data["www_url"]
         web_url = http_data["web_url"]
         port = http_data["port"]
-        # self.headers = {}
+        self.headers = {}
         # self.params = {}
         self.data = {}
         self.url = {}
@@ -94,7 +94,7 @@ class ConfigHttp:
         :return:
         """
         try:
-            response = requests.post(self.__url, json=self.__data)
+            response = requests.post(self.__url,  headers=self.headers,json=self.__data)
             # response.raise_for_status()
             return response
         except TimeoutError:
