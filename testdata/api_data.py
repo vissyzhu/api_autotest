@@ -15,5 +15,10 @@ api_homepage = {
     'getTeamPage': '/lyhcc/dh-medical-team/getTeamPage',  # 团队列表
     'getTeamMainPage': '/lyhcc/dh-medical-team/getTeamMainPage',  # 团队主页
     'thumbUp': '/lyhcc/app/thumbUp',  # 点赞
-
+    'getHospitalDocType': '/lyhcc/dh-medical-center/getHospitalDocType',  # 单病种中心文章分类
+    'getAppGistPage': '/lyhcc/app/getAppGistPage',  # 单病种中心页
+    'gistCenterDocuments': '/lyhcc/dh-medical-center/gistCenterDocuments',  # 单病种文章
+    'getDocumentList': '/lyhcc/dh-document/getDocumentList',  # 单病种名医义诊
+    'getDisByCenter': '/lyhcc/dh-disease/getDisByCenter',  # 单病种中心在线答疑，关联得瘤种
+    'getQuestionList': '/lyhcc/dhAsk/getQuestionList',  # 单病种中心在线答疑
 }
