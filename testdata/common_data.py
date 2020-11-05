@@ -12,4 +12,5 @@ common_data = {
     'Authorization': '7+ebe0jLOxyLndL28g84sEIF6w+zyWdRcOtRYsyW05Q=',  # 根据用户openid生成
     'mobile': '17321050037',  # 患者的手机号
     'teamId': 13,  # 团队id
+    'hospitalId':2541,#医院id
 }
