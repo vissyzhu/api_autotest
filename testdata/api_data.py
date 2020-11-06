@@ -22,4 +22,7 @@ api_homepage = {
     'getQuestionList': '/lyhcc/dhAsk/getQuestionList',  # 单病种中心在线答疑
     'hospitallist': '/lyhcc/dh-hospital/list',  # 肿瘤名院列表
     'getAppHospitalMainPage': '/lyhcc/app/getAppHospitalMainPage',  # 医院主页
+    'selectHosMainPageEvent': '/lyhcc/app/selectHosMainPageEvent',  # 医院下专家科普专题
+    'getAppHospitalDocumentPage': '/lyhcc/app/getAppHospitalDocumentPage',  # 医院下的专家科普文章
+
 }
