@@ -24,5 +24,9 @@ api_homepage = {
     'getAppHospitalMainPage': '/lyhcc/app/getAppHospitalMainPage',  # 医院主页
     'selectHosMainPageEvent': '/lyhcc/app/selectHosMainPageEvent',  # 医院下专家科普专题
     'getAppHospitalDocumentPage': '/lyhcc/app/getAppHospitalDocumentPage',  # 医院下的专家科普文章
-
+    'getDocumentDetail': '/lyhcc/dh-document/getDocumentDetail',  # 义诊详情页
+    'collectDocument': '/lyhcc/dh-document/collectDocument',  # 收藏公开课
+    'findListByPage': '/lyhcc/dh-disease/findListByPage',  # 瘤种数据
+    'addQuestion': '/lyhcc/dhAsk/addQuestion',  # 立即提问
+    'getQuestionDetail': '/lyhcc/dhAsk/getQuestionDetail',  # 问题详情页
 }
