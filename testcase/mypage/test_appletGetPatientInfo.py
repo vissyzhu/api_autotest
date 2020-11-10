@@ -34,6 +34,7 @@ class Test_AppletGetPatientInfo(unittest.TestCase):
         confighttp.set_headers(header)
         confighttp.set_data(data)
         self.response = confighttp.post().json()
+        self.patientId = self.response['result']['basicInfo']['patientId']
         self.check_result()
 
     def check_result(self):
@@ -45,7 +46,7 @@ class Test_AppletGetPatientInfo(unittest.TestCase):
         conn.close()
         # 结果验证
         self.assertEqual(self.response['status'], 0, '接口连接出错')
-        self.assertEqual(self.response['result']['basicIndo']['patientId'], result[0][0], '患者id返回错误')
+        self.assertEqual(self.response['result']['basicInfo']['patientId'], result[0][0], '患者id返回错误')
         self.assertIn('liangyihui.net', self.response['result']['basicInfo']['headPortraitUrl'], '患者头像未返回')
         self.assertIn('测试', self.response['result']['basicInfo']['nickName'], '患者昵称返回错误')
         self.assertEqual(self.response['result']['basicInfo']['tel'], result[0][2], '患者联系方式返回错误')

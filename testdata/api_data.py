@@ -29,4 +29,7 @@ api_homepage = {
     'findListByPage': '/lyhcc/dh-disease/findListByPage',  # 瘤种数据
     'addQuestion': '/lyhcc/dhAsk/addQuestion',  # 立即提问
     'getQuestionDetail': '/lyhcc/dhAsk/getQuestionDetail',  # 问题详情页
+    'getAreaTree': '/lyhcc/baseArea/getAreaTree',  # 地区接口
+    'getBosConDept': '/lyhcc/dh-hospital/getBosConDept',  # 科室列表
+    'getDoctorList': '/lyhcc/dh-doctor-user/list',  # 专家列表
 }
