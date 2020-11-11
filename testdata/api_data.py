@@ -32,4 +32,8 @@ api_homepage = {
     'getAreaTree': '/lyhcc/baseArea/getAreaTree',  # 地区接口
     'getBosConDept': '/lyhcc/dh-hospital/getBosConDept',  # 科室列表
     'getDoctorList': '/lyhcc/dh-doctor-user/list',  # 专家列表
+    'findLeaguePage': '/lyhcc/dh-medical-league/findLeaguePage',  # 医联体列表
+    'findLeagueById': '/lyhcc/dh-medical-league/findLeagueById',  # 医联体详情
+    'getLeagueHos': '/lyhcc/dh-medical-league/getLeagueHos',  # 医联体关联的医院
+    'getLeagueDoc': '/lyhcc/dh-medical-league/getLeagueDoc',  # 医联体关联的医生
 }

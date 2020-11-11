@@ -18,4 +18,5 @@ common_data = {
     'doctorId': 146317,  # 专家id
     'profileId': 49,  # 就诊人id
     'questionId': 10098,  # 答疑id
+    'leagueId': 28,  # 医联体id
 }
