@@ -5,7 +5,7 @@
 
 import unittest
 from commonlib.confighttp import ConfigHttp
-from testdata.api_data import api_homepage
+from testdata.api_data import api_mypage
 from testdata.common_data import common_data
 from commonlib.connectdb import connectdb
 
@@ -19,7 +19,7 @@ class Test_AppletGetPatientInfo(unittest.TestCase):
 
     def __init__(self, *args, **kwargs):
         super(Test_AppletGetPatientInfo, self).__init__(*args)
-        self.url = api_homepage['appletGetPatientInfo']  # 获取接口名称
+        self.url = api_mypage['appletGetPatientInfo']  # 获取接口名称
         confighttp.set_url(self.url)  # 将接口名称传给http配置文件中
 
     def test_appletGetPatientInfo(self):
