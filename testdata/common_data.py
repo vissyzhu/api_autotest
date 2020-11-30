@@ -22,4 +22,5 @@ common_data = {
     'inquiryId': 1,  # 问诊id
     'paymentId': 200,  # 支付id
     'prescriptionId': 219,  # 处方id
+    'profileId': 96,  # 健康档案id
 }

@@ -52,5 +52,10 @@ api_mypage = {
     'delPayment': '/lyhcc/dhPayment/delPayment',  # 删除订单
     'getPrePage': '/lyhcc/dhPrescription/getPrePage',  # 我的处方列表
     'getPrescriptionById': '/lyhcc/dhPrescription/getPrescriptionById',  # 处方详情页
-
+    'getMyCollectedDocument': '/lyhcc/user/getMyColletedDocument',  # 我的收藏
+    'getMyFollowedDoctor': '/lyhcc/user/getMyFollowedDoctor',  # 我关注的医生列表
+    'getMyFollowed': '/lyhcc/dhPatientFocus/getMyFollowed',  # 我关注的医院和科室列表
+    'addOrUpdate': '/lyhcc/dhPatientProfile/addOrUpdate',  # 新增健康档案
+    'getProfileById': '/lyhcc/dhPatientProfile/getProfileById',  # 根据id获取患者的健康档案
+    'getMyProfile': '/lyhcc/dhPatientProfile/getMyProfile',  # 获取当前患者的健康档案
 }

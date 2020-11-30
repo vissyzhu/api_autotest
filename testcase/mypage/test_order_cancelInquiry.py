@@ -51,8 +51,3 @@ class Test_CancelInquiry(unittest.TestCase):
         # 结果验证
         self.assertEqual(self.response['status'], 0, '接口连接错误')
         self.assertEqual(6, result[0][0], '取消订单成功')
-
-
-if __name__ == '__main__':
-    t = Test_XXXXX()
-    t.test_xxxx()
