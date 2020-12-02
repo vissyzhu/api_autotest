@@ -77,7 +77,7 @@ class Test_AddQuestion(unittest.TestCase):
         self.check_result()
         self.assertEqual(self.response['result']['askTo'], self.result[0][5], '定向提问的医生id存储错误')
 
-    # 立即提问
+    # 答疑大厅的立即提问
     def test_addQuestion(self):
         header = {
             'Authorization': '%s' % self.auth,

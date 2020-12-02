@@ -68,9 +68,3 @@ class Test_GetPatientPayList(unittest.TestCase):
         self.assertNotEqual(None, self.response['result']['records'][0]['disease'], '就诊人的疾病未显示')
         self.assertLessEqual(0, self.response['result']['records'][0]['amount'], '订单金额不对')
         self.assertLessEqual(1, len(self.response['result']['records']), '订单列表数据返回不全')
-
-
-if __name__ == '__main__':
-    t = Test_GetPatientPayList()
-    t.test_getPatientPayList()
-    t.test_getPatientPayList_ask()

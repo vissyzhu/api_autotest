@@ -38,9 +38,4 @@ class Test_GistCenterPage(unittest.TestCase):
         self.assertLessEqual(1, self.response['result']['records'][0]['id'], '单病种中心id未返回')
         self.assertNotEqual(None, self.response['result']['records'][0]['name'], '单病种中心名称未返回')
         self.assertIn('liangyihui.net', self.response['result']['records'][0]['iconUrl'], '单病种中心icon未返回')
-        self.assertLessEqual(1,len(self.response['result']['records']),  '未返回推荐中心数据')
-
-
-if __name__ == '__main__':
-    t = Test_GistCenterPage()
-    t.test_gistCenterPage()
+        self.assertLessEqual(1, len(self.response['result']['records']), '未返回推荐中心数据')

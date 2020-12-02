@@ -61,7 +61,3 @@ class Test_GetLeagueDoc(unittest.TestCase):
             print('该医联体下无医生数据')
         conn.close()
 
-
-if __name__ == '__main__':
-    t = Test_GetLeagueDoc()
-    t.test_getLeagueDoc()

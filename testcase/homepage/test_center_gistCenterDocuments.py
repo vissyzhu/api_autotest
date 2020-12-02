@@ -54,11 +54,6 @@ class Test_GistCenterDocuments(unittest.TestCase):
             self.assertLessEqual(1, self.response['result']['records'][0]['id'], '文章id未返回')
             self.assertNotEqual(None, self.response['result']['records'][0]['title'], '文章标题未返回')
             self.assertLessEqual(1, self.response['result']['records'][0]['readCount'], '文章查看次数未返回')
-            self.assertIn(self.response['result']['records'][0]['docType'], (16,22), '文章类型不对')
+            self.assertIn(self.response['result']['records'][0]['docType'], (16, 22), '文章类型不对')
         else:
             print('暂无数据')
-
-
-if __name__ == '__main__':
-    t = Test_GistCenterDocuments()
-    t.test_gistCenterDocuments()

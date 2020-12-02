@@ -52,8 +52,3 @@ class Test_UpdatePatient(unittest.TestCase):
         self.assertEqual(self.response['status'], 0, '接口连接错误')
         self.assertIn(self.date, result[0][0], '昵称未修改成功')
         self.assertEqual('甲状腺癌,胃肠间质瘤GIST,肝癌', result[0][1], '患者关注的瘤种不一致')
-
-
-if __name__ == '__main__':
-    t = Test_UpdatePatient()
-    t.test_updatePatient()

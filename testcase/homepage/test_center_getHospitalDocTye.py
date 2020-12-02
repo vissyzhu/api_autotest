@@ -37,8 +37,3 @@ class Test_GetHospitalDocType(unittest.TestCase):
         self.assertEqual(self.response['status'], 0, "接口连接错误")
         self.assertEqual('前沿动态', self.response['result'][0]['name'], '单病种中心标签未显示')
         self.assertLessEqual(3, len(self.response['result']), '单病种中心标签数据返回不全')
-
-
-if __name__ == '__main__':
-    t = Test_GetHospitalDocType()
-    t.test_getHospitalDocType()

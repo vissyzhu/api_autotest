@@ -44,7 +44,3 @@ class Test_GetBosConDept(unittest.TestCase):
         self.assertEqual('病理科', self.response['result'][1]['name'], '科室名称不对')
         self.assertLessEqual(20, len(self.response['result']), '科室数据返回不全')
 
-
-if __name__ == '__main__':
-    t = Test_GetBosConDept()
-    t.test_getBosConDept()

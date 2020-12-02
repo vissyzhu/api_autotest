@@ -31,7 +31,7 @@ class Test_GetTeamPage(unittest.TestCase):
         }
         confighttp.set_data(data)
         self.response = confighttp.post().json()
-        common_data['teamId'] = self.response['result']['records'][0]['id']
+        common_data['teamId'] = self.response['result']['records'][0]['teamId']
         self.check_result()
 
     def check_result(self):
@@ -46,8 +46,3 @@ class Test_GetTeamPage(unittest.TestCase):
         self.assertLessEqual(1, len(self.response['result']['records']), '团队数据返回不全')
         self.assertEqual(result[0][1], self.response['result']['records'][0]['teamName'], '团队名称未返回')
         self.assertEqual(result[0][3], self.response['result']['records'][0]['picUrl'], '团队图片未显示')
-
-
-if __name__ == '__main__':
-    t = Test_GetTeamPage()
-    t.test_getTeamPage()

@@ -47,8 +47,3 @@ class Test_HospitalList(unittest.TestCase):
         self.assertIn('liangyihui.net', self.response['result']['records'][0]['picUrl'], '医院头像未返回')
         self.assertNotEqual(None, self.response['result']['records'][0]['address'], '医院地址未返回')
         self.assertLessEqual(1, len(self.response['result']['records']), '医院列表无数据')
-
-
-if __name__ == '__main__':
-    t = Test_HospitalList()
-    t.test_hospitallist()

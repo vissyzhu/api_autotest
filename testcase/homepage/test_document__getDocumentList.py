@@ -37,7 +37,7 @@ class Test_GetDocumentList(unittest.TestCase):
         }
         confighttp.set_data(data)
         self.response = confighttp.post().json()
-        self.docID = self.response['result']['docGroups'][0]['documents']['docId']
+        self.docID = self.response['result']['docGroups'][0]['documents'][0]['docId']
         self.check_result()
 
     def check_result(self):
@@ -46,8 +46,3 @@ class Test_GetDocumentList(unittest.TestCase):
         self.assertLessEqual(1, self.response['result']['docGroups'][0]['count'], '往期回顾的义诊列表返回数据不对')
         self.assertNotEqual(None, self.response['result']['docGroups'][0]['documents'][0]['title'], '义诊名未返回')
         self.assertLessEqual(1, len(self.response['result']['docGroups'][0]['documents']), '义诊列表数据返回不对')
-
-
-if __name__ == '__main__':
-    t = Test_GetDocumentList()
-    t.test_getDocumentList()

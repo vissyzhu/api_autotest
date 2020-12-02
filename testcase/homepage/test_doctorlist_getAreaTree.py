@@ -43,7 +43,3 @@ class Test_GetAreaTree(unittest.TestCase):
         self.assertIn('区', self.response['result'][0]['childrens'][0]['areaName'], '二级数据未返回')
         self.assertLessEqual(31, len(self.response['result']), '城市数据返回不全')
 
-
-if __name__ == '__main__':
-    t = Test_GetAreaTree()
-    t.test_getAreaTree()

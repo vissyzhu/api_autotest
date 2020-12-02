@@ -49,8 +49,3 @@ class Test_FindLeagueById(unittest.TestCase):
         self.assertEqual(self.response['result']['name'], result[0][0], '医联体名不一致')
         self.assertEqual(self.response['result']['picUrl'], result[0][1], '医联体图片不一致')
         self.assertEqual(self.response['result']['description'], result[0][2], '医联体简介不一致')
-
-
-if __name__ == '__main__':
-    t = Test_FindLeagueById()
-    t.test_findLeagueById()

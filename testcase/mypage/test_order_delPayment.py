@@ -49,8 +49,3 @@ class Test_DelPayment(unittest.TestCase):
         self.assertEqual(self.response['status'], 0, '接口连接错误')
         self.assertEqual(1, result[0][0], '订单表订单删除失败')
         self.assertEqual(1, result[0][1], '支付表订单删除失败')
-
-
-if __name__ == '__main__':
-    t = Test_DelPayment()
-    t.test_delPayment()

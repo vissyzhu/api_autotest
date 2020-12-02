@@ -48,8 +48,3 @@ class Test_getAppHospitalDocumentPage(unittest.TestCase):
             self.assertLessEqual(0, self.response['result'][0]['documents'][0]['readAmount'], '科普文章的阅读次数未返回')
         else:
             print('该医院暂无科普文章')
-
-
-if __name__ == '__main__':
-    t = Test_getAppHospitalDocumentPage()
-    t.test_getAppHospitalDocumentPage()

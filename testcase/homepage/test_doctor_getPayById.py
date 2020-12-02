@@ -49,8 +49,3 @@ class Test_GetPayById(unittest.TestCase):
         self.assertEqual(self.response['result']['serialNumber'], result[0][1], '订单id不一致')
         self.assertEqual(self.response['result']['serviceType'], result[0][2], '服务类型不一致')
         self.assertEqual(self.response['result']['amount'], result[0][4], '服务的价格不一致')
-
-
-if __name__ == '__main__':
-    t = Test_GetPayById()
-    t.test_getPayById()

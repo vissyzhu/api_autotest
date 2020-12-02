@@ -54,8 +54,3 @@ class Test_GetLeagueHos(unittest.TestCase):
             self.assertIn('liangyihui', self.response['result']['records'][0]['picUrl'], '医联体的医院背景图没显示')
         else:
             print('该医联体下无医院数据')
-
-
-if __name__ == '__main__':
-    t = Test_GetLeagueHos()
-    t.test_getLeagueHos()

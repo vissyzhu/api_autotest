@@ -39,8 +39,3 @@ class Test_GetAppSearchPage(unittest.TestCase):
         self.assertIn('胃肠道', self.response['result']['centers'][0]['name'], '搜索返回的数据错误')
         self.assertLessEqual(1, self.response['result']['centers'][0]['id'], '搜索未返回中心id')
         self.assertIn('liangyihui.net', self.response['result']['centers'][0]['iconUrl'], '中心icon未返回')
-
-
-if __name__ == '__main__':
-    t = Test_GetAppSearchPage()
-    t.test_getAppSearchPage()

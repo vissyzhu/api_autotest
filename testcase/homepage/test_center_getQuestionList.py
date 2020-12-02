@@ -52,8 +52,3 @@ class Test_GetQuestionList(unittest.TestCase):
         self.assertLessEqual(1, self.response['result']['records'][0]['patientIdentity']['age'], '患者年龄不对')
         self.assertNotEqual(None, self.response['result']['records'][0]['patientIdentity']['area'], '患者所在地区未显示')
         self.assertLessEqual(1, len(self.response['result']['records']), '在线答疑的问题返回不全')
-
-
-if __name__ == '__main__':
-    t = Test_GetQuestionList()
-    t.test_getQuestionList()

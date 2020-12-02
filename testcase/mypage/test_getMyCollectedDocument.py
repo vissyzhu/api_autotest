@@ -47,7 +47,7 @@ class Test_GetMyCollectedDocument(unittest.TestCase):
         result = cc.fetchall()  # 获得数据库查询结果
         conn.close()
         # 结果验证
-        if len(result)!=0:
+        if len(result) != 0:
             self.assertEqual(self.response['status'], 0, '接口连接错误')
             self.assertNotEqual(None, self.response['result']['records'][0]['title'], '公开课名称未返回')
             self.assertLessEqual(1, self.response['result']['records'][0]['id'], '公开课id未返回')
@@ -55,8 +55,3 @@ class Test_GetMyCollectedDocument(unittest.TestCase):
             self.assertLessEqual(1, len(self.response['result']['records']), '收藏的公开课未返回')
         else:
             self.assertEqual(self.response['status'], 0, '接口连接错误')
-
-
-if __name__ == '__main__':
-    t = Test_GetMyCollectedDocument()
-    t.test_getMyCollectedDocument()

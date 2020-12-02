@@ -46,7 +46,3 @@ class Test_GetDocumentList(unittest.TestCase):
         self.assertNotEqual(None, self.response['result']['docGroups'][0]['documents'][0]['title'], '义诊名未返回')
         self.assertLessEqual(1, len(self.response['result']['docGroups'][0]['documents']), '义诊列表数据返回不对')
 
-
-if __name__ == '__main__':
-    t = Test_XXXXX()
-    t.test_xxxx()

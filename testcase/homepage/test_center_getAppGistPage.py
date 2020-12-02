@@ -49,8 +49,3 @@ class Test_getAppGistPage(unittest.TestCase):
         self.assertLessEqual(1, self.response['result']['doctors'][0]['doctorId'], '该单病种中心专家id未返回')
         self.assertNotEqual(None, self.response['result']['doctors'][0]['name'], '该单病种中心医生名称未返回')
         self.assertIn('间质瘤', self.response['result']['doctors'][0]['disease'], '该单病种中心下专家擅长的瘤种不对')
-
-
-if __name__ == '__main__':
-    t = Test_getAppGistPage()
-    t.test_getAppGistPage()

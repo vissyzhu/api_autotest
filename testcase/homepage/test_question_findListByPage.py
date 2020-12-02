@@ -50,8 +50,3 @@ class Test_FindListByPage(unittest.TestCase):
         self.assertEqual(self.response['result']['records'][0]['id'], result[0][0], '瘤种id返回错误')
         self.assertEqual(self.response['result']['records'][0]['name'], result[0][2], '瘤种名称返回错误')
         self.assertEqual(len(self.response['result']['records']), len(result), '瘤种数量返回不全')
-
-
-if __name__ == '__main__':
-    t = Test_FindListByPage()
-    t.test_findListByPage()

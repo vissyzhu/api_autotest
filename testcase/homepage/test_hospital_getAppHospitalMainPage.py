@@ -85,8 +85,3 @@ class Test_getAppHospitalMainPage(unittest.TestCase):
             self.assertEqual(self.response['result']['depts'][0]['name'], result3[0][0], '医院的科室名称错误')
         else:
             print('该医院无科室数据')
-
-
-if __name__ == '__main__':
-    t = Test_getAppHospitalMainPage()
-    t.test_getAppHospitalMainPage()

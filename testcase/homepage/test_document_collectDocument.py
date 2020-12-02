@@ -68,3 +68,4 @@ class Test_CollectDocument(unittest.TestCase):
         confighttp.set_headers(header)
         confighttp.set_data(data)
         self.response = confighttp.post().json()
+        self.check_result()

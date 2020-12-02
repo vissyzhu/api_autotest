@@ -19,7 +19,7 @@ common_data = {
     'profileId': 49,  # 就诊人id
     'questionId': 10098,  # 答疑id
     'leagueId': 28,  # 医联体id
-    'inquiryId': 1,  # 问诊id
+    'inquiryId': 54,  # 问诊id
     'paymentId': 200,  # 支付id
     'prescriptionId': 219,  # 处方id
     'profileId': 96,  # 健康档案id

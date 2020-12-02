@@ -54,8 +54,3 @@ class Test_GetHospitalQuestion(unittest.TestCase):
             self.assertEqual(len(result), len(self.response['result']['records']), '提问数据显示不全')
         else:
             print('我的提问页数据不对！')
-
-
-if __name__ == '__main__':
-    t = Test_GetHospitalQuestion()
-    t.test_getHospitalQuestion()

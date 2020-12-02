@@ -45,8 +45,3 @@ class Test_GetAppDocDocumentPage(unittest.TestCase):
         self.assertIn('liangyihui', self.response['result'][0]['documents'][0]['picUrl'], '科普文章的背景图未显示')
         self.assertLessEqual(1, self.response['result'][0]['documents'][0]['docId'], '科普文章id错误')
         self.assertLessEqual(1, len(self.response['result'][0]['documents']), '科普文章未显示')
-
-
-if __name__ == '__main__':
-    t = Test_GetAppDocDocumentPage()
-    t.test_getAppDocDocumentPage()

@@ -50,8 +50,3 @@ class Test_selectHosMainPageEvent(unittest.TestCase):
             self.assertIn('liangyihui', self.response['result']['pageEventVO'][0]['picUrl'], '专题icon未返回')
         else:
             print('该医院暂无专家科普专题')
-
-
-if __name__ == '__main__':
-    t = Test_selectHosMainPageEvent()
-    t.test_selectHosMainPageEvent()

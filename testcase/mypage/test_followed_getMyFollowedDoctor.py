@@ -43,8 +43,3 @@ class Test_GetMyFollowedDoctor(unittest.TestCase):
         self.assertNotEqual(None, self.response['result']['myFollowDoctorList'][0]['hospital'], '我关注医生的医院未显示')
         self.assertIn('liangyihui', self.response['result']['myFollowDoctorList'][0]['headPortraitUrl'], '我关注医生的头像未显示')
         self.assertLessEqual(1, len(self.response['result']['myFollowDoctorList']), '我关注医生的数据显示不全')
-
-
-if __name__ == '__main__':
-    t = Test_GetMyFollowedDoctor()
-    t.test_getMyFollowedDoctor()

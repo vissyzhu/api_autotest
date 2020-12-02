@@ -43,8 +43,3 @@ class Test_ThumbUp(unittest.TestCase):
         self.assertEqual(self.response['status'], 0, "接口连接错误")
         self.assertLessEqual(1, self.response['result']['thumbUpCount'], '团队主页点赞数显示不对')
         self.assertEqual('点赞成功', self.response['result']['msg'], '点赞失败')
-
-
-if __name__ == '__main__':
-    t = Test_ThumbUp()
-    t.test_thumbUp()

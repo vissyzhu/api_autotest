@@ -46,12 +46,6 @@ class Test_GetDoctorByInquiryId(unittest.TestCase):
         conn.close()
         # 结果验证
         self.assertEqual(self.response['status'], 0, '接口连接错误')
-        self.assertEqual(self.response['result']['dhInquiry']['patientProfileId'],result[0][1],'返回的健康档案id不对')
-        self.assertEqual(self.response['result']['dhInquiry']['toDoctorId'],result[0][2],'图文问诊的医生id不一致')
-        self.assertEqual(self.response['result']['dhInquiry']['description'],result[0][3],'图文问诊内容不一致')
-
-
-
-if __name__ == '__main__':
-    t = Test_GetDoctorByInquiryId()
-    t.test_getDoctorByInquiryId()
+        self.assertEqual(self.response['result']['dhInquiry']['patientProfileId'], result[0][1], '返回的健康档案id不对')
+        self.assertEqual(self.response['result']['dhInquiry']['toDoctorId'], result[0][2], '图文问诊的医生id不一致')
+        self.assertEqual(self.response['result']['dhInquiry']['description'], result[0][3], '图文问诊内容不一致')

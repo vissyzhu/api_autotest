@@ -49,8 +49,3 @@ class Test_GetDocumentDetail(unittest.TestCase):
         self.assertEqual(self.response['status'], 0, "接口连接错误")
         self.assertEqual(self.response['result']['basic']['title'], result[0][0], '义诊标题不一致')
         self.assertIn(self.response['result']['basic']['contents'], result[0][1], '义诊详情不一致')
-
-
-if __name__ == '__main__':
-    t = Test_XXXXX()
-    t.test_xxxx()

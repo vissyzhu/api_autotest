@@ -51,8 +51,3 @@ class Test_AppletGetPatientInfo(unittest.TestCase):
         self.assertIn('测试', self.response['result']['basicInfo']['nickName'], '患者昵称返回错误')
         self.assertEqual(self.response['result']['basicInfo']['tel'], result[0][2], '患者联系方式返回错误')
         self.assertEqual(self.response['result']['basicInfo']['attentions'], result[0][3], '患者关注的瘤种数据返回错误')
-
-
-if __name__ == '__main__':
-    t = Test_AppletGetPatientInfo()
-    t.test_appletGetPatientInfo()

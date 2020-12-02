@@ -62,8 +62,3 @@ class Test_GetDoctorMainPage(unittest.TestCase):
         self.assertIn('感谢', self.response['result']['rateVoPage'][0]['rateText'], '评价内容未显示')
         self.assertLessEqual(1, len(self.response['result']['rateVoPage']), '患者评价数据显示不全')
         self.assertNotEqual(None, self.response['result']['questionDetailPage']['records'][0]['detail'], '问题没显示')
-
-
-if __name__ == '__main__':
-    t = Test_GetDoctorMainPage()
-    t.test_getDoctorMainPage()

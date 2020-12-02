@@ -44,8 +44,3 @@ class Test_GistCenterTree(unittest.TestCase):
         self.assertEqual(self.response['result'][4]['name'], '研究中心', '研究中心列表未返回')
         self.assertEqual('临床试验', self.response['result'][4]['centerTreeVOS'][0]['centerTreeVOS'][0]['name'],
                          '临床试验数据未返回')
-
-
-if __name__ == '__main__':
-    t = Test_GistCenterTree()
-    t.test_gistCenterTree()

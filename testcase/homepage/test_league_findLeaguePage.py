@@ -43,8 +43,3 @@ class Test_FindLeaguePage(unittest.TestCase):
         self.assertEqual(self.response['status'], 0, '接口连接错误')
         self.assertNotEqual(None, self.response['result']['records'][0]['name'], '医联体名未返回')
         self.assertIn('liangyihui', self.response['result']['records'][0]['picUrl'], '医联体的图片未返回')
-
-
-if __name__ == '__main__':
-    t = Test_FindLeaguePage()
-    t.test_findLeaguePage()

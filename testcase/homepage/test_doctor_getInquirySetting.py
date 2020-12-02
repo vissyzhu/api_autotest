@@ -30,7 +30,7 @@ class Test_getInquirySetting(unittest.TestCase):
             'From-Platform': 'miniapp'
         }
         data = {
-            "%s" % self.doctorId
+            "id": "%s" % self.doctorId,
         }
         confighttp.set_headers(header)
         confighttp.set_data(data)
@@ -56,8 +56,3 @@ class Test_getInquirySetting(unittest.TestCase):
         self.assertEqual(self.response['result']['opinionAmount'], result[0][10], '第二诊疗意见设置的价格不一致')
         self.assertEqual(self.response['result']['questionSwitch'], result[0][11], '一问一答开关设置不一致')
         self.assertEqual(self.response['result']['questionAmount'], result[0][12], '一问一答设置的价格不一致')
-
-
-if __name__ == '__main__':
-    t = Test_getInquirySetting()
-    t.test_getInquirySetting()

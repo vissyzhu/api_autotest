@@ -141,8 +141,3 @@ class Test_saveDhInquiry(unittest.TestCase):
         self.assertEqual(self.response['result']['inquiryId'], self.result[0][0], 'id返回错误')
         self.assertEqual(self.result[0][1], self.profileId, '健康档案关联错误')
         self.assertEqual(self.result[0][5], self.patientId, '提问的患者id不对')
-
-
-if __name__ == '__main__':
-    t = Test_saveDhInquiry()
-    t.test_saveDhInquiry()

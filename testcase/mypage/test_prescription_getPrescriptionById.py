@@ -59,8 +59,3 @@ class Test_GetPrescriptionById(unittest.TestCase):
         self.assertLessEqual(1, self.response['result']['prescriptionDrugs'][0]['drugAmount'], '药品数量未显示')
         self.assertNotEqual(None, self.response['result']['prescriptionDrugs'][0]['drugUnit'], '药品单位未显示')
         self.assertLessEqual(1, len(self.response['result']['prescriptionDrugs']), '药品数据不全')
-
-
-if __name__ == '__main__':
-    t = Test_GetPrescriptionById()
-    t.test_getPrescriptionById()

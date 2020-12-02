@@ -45,8 +45,3 @@ class Test_GetDisByCenter(unittest.TestCase):
             self.assertEqual(self.response['result'][0]['name'], result[0][1], '单病种中心关联瘤种的名称错误')
         else:
             print("接口或查询返回数据错误。")
-
-
-if __name__ == '__main__':
-    t = Test_GetDisByCenter()
-    t.test_getDisByCenter()

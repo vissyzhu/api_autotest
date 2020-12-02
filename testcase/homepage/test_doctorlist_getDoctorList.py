@@ -62,8 +62,3 @@ class Test_GetDoctorList(unittest.TestCase):
         self.assertEqual(self.response['result']['records'][0]['hospital'], result[0][3], '医生所在医院显示错误')
         self.assertEqual(self.response['result']['records'][0]['description'], result[0][4], '医生的个人简介错误')
         self.assertLessEqual(10, len(self.response['result']['records']), '医生数据返回不全')
-
-
-if __name__ == '__main__':
-    t = Test_GetDoctorList()
-    t.test_getDoctorList()

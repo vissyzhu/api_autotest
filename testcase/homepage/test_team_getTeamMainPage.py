@@ -61,8 +61,3 @@ class Test_GetTeamMainPage(unittest.TestCase):
             self.assertEqual(result2[0][2], self.response['result']['doctorVOS']['records'][0]['hospital'],
                              '专家所在医院显示错误')
             self.assertEqual(result2[0][3], self.response['result']['doctorVOS']['records'][0]['dept'], '专家所在科室显示错误')
-
-
-if __name__ == '__main__':
-    t = Test_GetTeamMainPage()
-    t.test_getTeamMainPage()
