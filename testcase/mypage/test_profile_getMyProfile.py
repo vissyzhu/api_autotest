@@ -54,4 +54,4 @@ class Test_GetMyProfile(unittest.TestCase):
         self.assertEqual(self.response['result'][0]['mainDiseaseId'], result[0][6], '疾病id不一致')
         self.assertEqual(self.response['result'][0]['areaId'], result[0][7], '所在省份不一致')
         self.assertEqual(self.response['result'][0]['cityId'], result[0][12], '所在城市不一致')
-        self.assertEqual(self.response['result'][0]['relation'], result[0][9], '亲友关系不一致')
+        self.assertEqual(self.response['result'][0]['relation'], result[0][8], '亲友关系不一致')

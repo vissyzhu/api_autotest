@@ -59,24 +59,15 @@ class Test_getAppHospitalMainPage(unittest.TestCase):
         self.assertEqual(self.response['result']['hospitalMsg']['category'], result0[0][6], '医院分类错误')
         self.assertLessEqual(0, self.response['result']['hospitalMsg']['thumbUpNum'], '医院主页的点赞数未返回')
         # 医院下的医生数据验证
-        cc.execute(
-            "SELECT * FROM `dh_doctor_relate_team` dd JOIN(SELECT *FROM `dh_doctor_ext` de JOIN `user_plat` up on de.`doctor_id`= up.`user_id` WHERE de.`is_forbid`= 0AND up.`user_plat`= 3AND up.`user_type`= 1) AS a ON dd.`doctor_id`= a.doctor_id WHERE dd.`team_id`= %s" % self.teamId)  # 查询
-        result1 = cc.fetchall()  # 获得数据库查询结果
-        if len(result1) != 0:
-            cc.execute(
-                "SELECT  ui.`real_name` ,uc.`dept_title`  , uc.`cmp_name`,uc.`dept_name`,ui.`introduction`     FROM  `user_identity` ui JOIN  `user_company` uc on ui.`user_id` =uc.`user_id` WHERE ui.`user_id` = %s" %
-                result1[0][0])  # 查询
-            result2 = cc.fetchall()  # 获得数据库查询结果
-            self.assertEqual(self.response['result']['doctorUserPage']['records'][0]['name'], result2[0][0], '医生名称错误')
-            self.assertEqual(self.response['result']['doctorUserPage']['records'][0]['deptTitle'], result2[0][1],
-                             '医生职称错误')
-            self.assertEqual(self.response['result']['doctorUserPage']['records'][0]['hospital'], result2[0][2],
-                             '医生所在医院错误')
-            self.assertEqual(self.response['result']['doctorUserPage']['records'][0]['dept'], result2[0][3], '医生所在科室错误')
-            self.assertEqual(self.response['result']['doctorUserPage']['records'][0]['description'], result2[0][4],
-                             '医生个人简介错误')
-        else:
-            print('该医院下无医生数据')
+
+        self.assertNotEqual(None, self.response['result']['doctorUserPage']['records'][0]['name'], '医生名称错误')
+        self.assertNotEqual(None, self.response['result']['doctorUserPage']['records'][0]['deptTitle'],
+                            '医生职称错误')
+        self.assertEqual(self.response['result']['doctorUserPage']['records'][0]['hospital'],
+                         self.response['result']['hospitalMsg']['name'],
+                         '医生所在医院错误')
+        self.assertNotEqual(None, self.response['result']['doctorUserPage']['records'][0]['dept'], '医生所在科室错误')
+
         # 医院下的科室数据验证
         cc.execute("SELECT   name FROM dh_hospital_dept WHERE  hospital_id=%s" % self.hospitalId)
         result3 = cc.fetchall()

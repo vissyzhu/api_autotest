@@ -10,16 +10,16 @@
 # 线上数据
 common_data = {
     'Authorization': 'FUnSNq2QXkaNE5KyphatPrEWoycb2958XNYdfiQ9QWg=',  # 根据用户openid生成
-    'mobile': '17321050037',  # 患者的手机号
+    'mobile': '15250485783',  # 患者的手机号
     'teamId': 13,  # 团队id
     'hospitalId': 2541,  # 医院id
-    'docId': 66704,  # 公开课id
+    'docId': 67725,  # 公开课id
     'patientId': 194235,  # 小程序用户id
     'doctorId': 146317,  # 专家id
     'profileId': 49,  # 就诊人id
     'questionId': 10098,  # 答疑id
     'leagueId': 28,  # 医联体id
-    'inquiryId': 54,  # 问诊id
+    'inquiryId': 138,  # 问诊id
     'paymentId': 200,  # 支付id
     'prescriptionId': 219,  # 处方id
     'profileId': 96,  # 健康档案id

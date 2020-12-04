@@ -46,19 +46,20 @@ class Test_GetDoctorMainPage(unittest.TestCase):
         cc = connect[1]
         cc.execute(
             "SELECT  ui.`real_name` ,uc.`dept_title` ,uc.`dept_name`, uc.`cmp_name`   ,ui.`specialty`,ui.`introduction`   FROM `user_identity` ui JOIN  `user_company` uc on ui.`user_id` =uc.`user_id` WHERE ui.`user_id` =%s" %
-            self.response['result']['records'][0]['doctorId'])  # 查询
+            self.doctorId)  # 查询
         result = cc.fetchall()
         conn.close()
         # 结果验证
         self.assertEqual(self.response['status'], 0, '接口连接错误')
-        self.assertEqual(self.response['result']['mainPageVO'][0]['name'], result[0][0], '医生姓名错误')
-        self.assertEqual(self.response['result']['mainPageVO'][0]['deptTitle'], result[0][1], '医生职称错误')
-        self.assertEqual(self.response['result']['mainPageVO'][0]['dept'], result[0][2], '医生科室错误')
-        self.assertEqual(self.response['result']['mainPageVO'][0]['hospital'], result[0][3], '医生所在医院显示错误')
-        self.assertEqual(self.response['result']['mainPageVO'][0]['specialty'], result[0][4], '医生的专业擅长错误')
-        self.assertEqual(self.response['result']['mainPageVO'][0]['introduction'], result[0][5], '医生的职业经历错误')
-        self.assertLessEqual(1, self.response['result']['mainPageVO'][0]['fansCount'], '关注数不对')
-        self.assertLessEqual(1, self.response['result']['mainPageVO'][0]['serviceTime'], '服务次数不对')
-        self.assertIn('感谢', self.response['result']['rateVoPage'][0]['rateText'], '评价内容未显示')
-        self.assertLessEqual(1, len(self.response['result']['rateVoPage']), '患者评价数据显示不全')
-        self.assertNotEqual(None, self.response['result']['questionDetailPage']['records'][0]['detail'], '问题没显示')
+        self.assertEqual(self.response['result']['mainPageVO']['name'], result[0][0], '医生姓名错误')
+        self.assertEqual(self.response['result']['mainPageVO']['deptTitle'], result[0][1], '医生职称错误')
+        self.assertEqual(self.response['result']['mainPageVO']['dept'], result[0][2], '医生科室错误')
+        self.assertEqual(self.response['result']['mainPageVO']['hospital'], result[0][3], '医生所在医院显示错误')
+        self.assertEqual(self.response['result']['mainPageVO']['specialty'], result[0][4], '医生的专业擅长错误')
+        self.assertEqual(self.response['result']['mainPageVO']['introduction'], result[0][5], '医生的职业经历错误')
+        self.assertLessEqual(1, self.response['result']['mainPageVO']['fansCount'], '关注数不对')
+        self.assertLessEqual(1, self.response['result']['mainPageVO']['serviceTime'], '服务次数不对')
+        self.assertIn('感谢', self.response['result']['rateVoPage']['records'][0]['rateText'], '评价内容未显示')
+        self.assertLessEqual(1, len(self.response['result']['rateVoPage']['records']), '患者评价数据显示不全')
+        self.assertNotEqual(None, self.response['result']['questionDetailPage']['page']['records'][0]['detail'],
+                            '问题没显示')

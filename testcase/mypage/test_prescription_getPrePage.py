@@ -35,7 +35,7 @@ class Test_GetPrePage(unittest.TestCase):
         confighttp.set_headers(header)
         confighttp.set_data(data)
         self.response = confighttp.post().json()
-        common_data['prescriptionSn']=self.response['result']['records'][0]['id']
+        common_data['prescriptionSn'] = self.response['result']['records'][0]['id']
         self.check_result()
 
     def check_result(self):
@@ -46,8 +46,3 @@ class Test_GetPrePage(unittest.TestCase):
         self.assertNotEqual(None, self.response['result']['records'][0]['result'], '诊断结果未显示')
         self.assertNotEqual(None, self.response['result']['records'][0]['prescriptionDrugs'][0]['drugName'], '药品名称未显示')
         self.assertLessEqual(1, len(self.response['result']['records']), '处方数据显示不全')
-
-
-if __name__ == '__main__':
-    t = Test_GetPrePage()
-    t.test_getPrePage()

@@ -13,6 +13,7 @@ import time
 confighttp = ConfigHttp()
 
 
+@unittest.skip('业务逻辑变更，无免费答疑')
 class Test_AddQuestion(unittest.TestCase):
     '''
     立即提问
@@ -26,7 +27,7 @@ class Test_AddQuestion(unittest.TestCase):
         self.docId = common_data['docId']
         self.profileId = common_data['profileId']
         self.doctorId = common_data['doctorId']
-        self. patientId = common_data['patientId']
+        self.patientId = common_data['patientId']
         self.date = time.strftime('%Y%m%d', time.localtime(time.time()))
 
     # 公开课的定向提问

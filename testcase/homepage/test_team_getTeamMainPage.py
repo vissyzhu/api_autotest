@@ -48,7 +48,7 @@ class Test_GetTeamMainPage(unittest.TestCase):
         self.assertLessEqual(1, self.response['result']['thumbUpCount'], '团队点赞数未显示')
         # 团队成员
         cc.execute(
-            "SELECT * FROM `dh_doctor_relate_team` dd JOIN(SELECT *FROM `dh_doctor_ext` de JOIN `user_plat` up on de.`doctor_id`= up.`user_id` WHERE de.`is_forbid`= 0AND up.`user_plat`= 3AND up.`user_type`= 1) AS a ON dd.`doctor_id`= a.doctor_id WHERE dd.`team_id`= %s" % self.teamId)  # 查询
+            "SELECT * FROM `dh_doctor_relate_team` dd JOIN(SELECT * FROM `dh_doctor_ext` de JOIN `user_plat` up on de.`doctor_id`= up.`user_id` WHERE de.`is_forbid`= 0 AND up.`user_plat`= 3 AND up.`user_type`= 1) AS a ON dd.`doctor_id`= a.doctor_id WHERE dd.`team_id`= %s" % self.teamId)  # 查询
         result1 = cc.fetchall()  # 获得数据库查询结果
         if len(result1) != 0:
             cc.execute(

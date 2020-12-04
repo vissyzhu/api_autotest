@@ -43,7 +43,7 @@ class Test_GetHospitalQuestion(unittest.TestCase):
         conn = connect[0]
         cc = connect[1]
         cc.execute(
-            "SELECT  `patient_condition` , `detail`  FROM `ask_question` WHERE `ask_by` =%s and `source` =2 AND `is_delete` =0 ORDER BY `id`  DESC %s" % self.patientId)  # 查询
+            "SELECT  `patient_condition` , `detail`  FROM `ask_question` WHERE `ask_by` =%s and `source` =2 AND `is_delete` =0 ORDER BY `id`  DESC " % self.patientId)  # 查询
         result = cc.fetchall()  # 获得数据库查询结果
         conn.close()
         # 结果验证
