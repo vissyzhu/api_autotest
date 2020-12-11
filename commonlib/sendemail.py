@@ -26,7 +26,7 @@ def send_email(newfile):
     cc = email_data['cc']
 
     # 发送邮件主题
-    subject = '良医汇主api测试报告%s' % today
+    subject = '良医汇互联网医院小程序api测试报告%s' % today
     msg = MIMEMultipart('mixed')
     msg_html1 = MIMEText(mail_body,
                          'html', 'utf-8')  # 邮件内容
