@@ -21,10 +21,11 @@ class Test_GetDisByCenter(unittest.TestCase):
         super(Test_GetDisByCenter, self).__init__(*args)
         self.url = api_homepage['getDisByCenter']  # 获取接口名称
         confighttp.set_url(self.url)  # 将接口名称传给http配置文件中
+        self.centerId = common_data['centerId']
 
     def test_getDisByCenter(self):
         data = {
-            "centerId": "5"
+            "centerId": "%s" % self.centerId
         }
         confighttp.set_data(data)
         self.response = confighttp.post().json()

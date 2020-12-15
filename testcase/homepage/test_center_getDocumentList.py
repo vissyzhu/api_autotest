@@ -21,11 +21,12 @@ class Test_GetDocumentList(unittest.TestCase):
         super(Test_GetDocumentList, self).__init__(*args)
         self.url = api_homepage['getDocumentList']  # 获取接口名称
         confighttp.set_url(self.url)  # 将接口名称传给http配置文件中
+        self.centerId = common_data['centerId']
 
     def test_getDocumentList(self):
         data = {
             "head": {},
-            "centerId": "5",
+            "centerId": "%s" % self.centerId,
             "filters": [{
                 "filterGroupId": 23
             }],
@@ -45,4 +46,3 @@ class Test_GetDocumentList(unittest.TestCase):
         self.assertLessEqual(1, self.response['result']['docGroups'][0]['count'], '往期回顾的义诊列表返回数据不对')
         self.assertNotEqual(None, self.response['result']['docGroups'][0]['documents'][0]['title'], '义诊名未返回')
         self.assertLessEqual(1, len(self.response['result']['docGroups'][0]['documents']), '义诊列表数据返回不对')
-

@@ -21,6 +21,7 @@ class Test_GistCenterDocuments(unittest.TestCase):
         super(Test_GistCenterDocuments, self).__init__(*args)
         self.url = api_homepage['gistCenterDocuments']  # 获取接口名称
         confighttp.set_url(self.url)  # 将接口名称传给http配置文件中
+        self.centerId = common_data['centerId']
 
     def test_gistCenterDocuments(self):
         self.auth = common_data['Authorization']
@@ -31,7 +32,7 @@ class Test_GistCenterDocuments(unittest.TestCase):
         data = {
             "index": 1,
             "size": 3,
-            "centerId": "5",
+            "centerId": "%s" % self.centerId,
             "type": 1534,
             "all": False,
             "app": True
@@ -53,7 +54,7 @@ class Test_GistCenterDocuments(unittest.TestCase):
         if len(result) != 0:
             self.assertLessEqual(1, self.response['result']['records'][0]['id'], '文章id未返回')
             self.assertNotEqual(None, self.response['result']['records'][0]['title'], '文章标题未返回')
-            self.assertLessEqual(1, self.response['result']['records'][0]['readCount'], '文章查看次数未返回')
+            # self.assertLessEqual(1, self.response['result']['records'][0]['readCount'], '文章查看次数未返回')
             self.assertIn(self.response['result']['records'][0]['docType'], (16, 22), '文章类型不对')
         else:
             print('暂无数据')

@@ -40,6 +40,8 @@ class Test_GetPatientPayList(unittest.TestCase):
         self.check_result()
         self.assertIn(self.response['result']['records'][0]['inType'], (0, 1, 2, 3), '问诊类型未返回')
         self.assertLessEqual(0, self.response['result']['records'][0]['inStatus'], '订单状态未返回')
+        self.assertNotEqual(None, self.response['result']['records'][0]['doctorName'], '问诊的医生名未显示')
+
 
     # 答疑列表
     def test_getPatientPayList_ask(self):
@@ -62,7 +64,6 @@ class Test_GetPatientPayList(unittest.TestCase):
     def check_result(self):
         # 结果验证
         self.assertEqual(self.response['status'], 0, '接口连接错误')
-        self.assertNotEqual(None, self.response['result']['records'][0]['doctorName'], '问诊的医生名未显示')
         self.assertNotEqual(None, self.response['result']['records'][0]['patientName'], '就诊人姓名未显示')
         self.assertIn(self.response['result']['records'][0]['gender'], (1, 2), '就诊人性别未显示')
         self.assertNotEqual(None, self.response['result']['records'][0]['disease'], '就诊人的疾病未显示')

@@ -51,6 +51,6 @@ class Test_GetHospitalQuestion(unittest.TestCase):
             self.assertEqual(self.response['status'], 0, '接口连接错误')
             self.assertEqual(self.response['result']['records'][0]['patientCondition'], result[0][0], '病情描述不一致')
             self.assertEqual(self.response['result']['records'][0]['detail'], result[0][1], '问题描述不一致')
-            self.assertEqual(len(result), len(self.response['result']['records']), '提问数据显示不全')
+            self.assertEqual(len(result), self.response['result']['total'], '提问数据显示不全')
         else:
             print('我的提问页数据不对！')

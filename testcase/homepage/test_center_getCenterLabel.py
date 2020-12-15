@@ -12,23 +12,29 @@ from commonlib.connectdb import connectdb
 confighttp = ConfigHttp()
 
 
-class Test_GetHospitalDocType(unittest.TestCase):
+class Test_GetCenterLabel(unittest.TestCase):
     '''
-    单病种中心文章类型
+    单病种中心标签类型-胃肠间质瘤为例
     '''
 
     def __init__(self, *args, **kwargs):
-        super(Test_GetHospitalDocType, self).__init__(*args)
-        self.url = api_homepage['getHospitalDocType']  # 获取接口名称
+        super(Test_GetCenterLabel, self).__init__(*args)
+        self.url = api_homepage['getCenterLabel']  # 获取接口名称
         confighttp.set_url(self.url)  # 将接口名称传给http配置文件中
+        self.centerId = common_data['centerId']
 
-    def test_getHospitalDocType(self):
+    def test_getCenterLabel(self):
         self.auth = common_data['Authorization']
         header = {
             'Authorization': '%s' % self.auth,
             'From-Platform': 'miniapp'
         }
+
+        data = {
+            "id": "%s" % self.centerId
+        }
         confighttp.set_data(header)
+        confighttp.set_data(data)
         self.response = confighttp.post().json()
         self.check_result()
 

@@ -23,10 +23,10 @@ class Test_UpdatePatient(unittest.TestCase):
         self.url = api_mypage['updatePatient']  # 获取接口名称
         confighttp.set_url(self.url)  # 将接口名称传给http配置文件中
         self.date = time.strftime('%Y%m%d', time.localtime(time.time()))
-        self.patientId = common_data['patientId']
 
     def test_updatePatient(self):
         self.auth = common_data['Authorization']
+        self.patientId = common_data['patientId']
         header = {
             'Authorization': '%s' % self.auth,
             'From-Platform': 'miniapp'

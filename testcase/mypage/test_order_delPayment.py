@@ -48,4 +48,4 @@ class Test_DelPayment(unittest.TestCase):
         # 结果验证
         self.assertEqual(self.response['status'], 0, '接口连接错误')
         self.assertEqual(1, result[0][0], '订单表订单删除失败')
-        self.assertEqual(1, result[0][1], '支付表订单删除失败')
+        self.assertEqual(1, ord(result[0][1]), '支付表订单删除失败')

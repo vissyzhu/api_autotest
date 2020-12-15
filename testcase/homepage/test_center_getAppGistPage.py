@@ -21,6 +21,7 @@ class Test_getAppGistPage(unittest.TestCase):
         super(Test_getAppGistPage, self).__init__(*args)
         self.url = api_homepage['getAppGistPage']  # 获取接口名称
         confighttp.set_url(self.url)  # 将接口名称传给http配置文件中
+        self.centerId = common_data['centerId']
 
     def test_getAppGistPage(self):
         self.auth = common_data['Authorization']
@@ -29,7 +30,7 @@ class Test_getAppGistPage(unittest.TestCase):
             'From-Platform': 'miniapp'
         }
         data = {
-            "centerId": "5",
+            "centerId": "%s" % self.centerId,
             "teamSize": 4,
             "docSize": 4,
             "overseaDocSize": 2,

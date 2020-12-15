@@ -14,7 +14,8 @@ api_homepage = {
     'getTeamPage': '/lyhcc/dh-medical-team/getTeamPage',  # 团队列表
     'getTeamMainPage': '/lyhcc/dh-medical-team/getTeamMainPage',  # 团队主页
     'thumbUp': '/lyhcc/app/thumbUp',  # 点赞
-    'getHospitalDocType': '/lyhcc/dh-medical-center/getHospitalDocType',  # 单病种中心文章分类
+    'getModuleList': '/lyhcc/dhModule/getModuleList',  # 单病种中心模块配置
+    'getCenterLabel': '/lyhcc/dhCenterRelateLabel/getCenterLabel',  # 单病种中心文章标签配置
     'getAppGistPage': '/lyhcc/app/getAppGistPage',  # 单病种中心页
     'getDocumentList': '/lyhcc/dh-document/getDocumentList',  # 单病种名医义诊
     'getDisByCenter': '/lyhcc/dh-disease/getDisByCenter',  # 单病种中心在线答疑，关联得瘤种
@@ -41,6 +42,8 @@ api_homepage = {
     'getInquirySetting': '/lyhcc/dh-doctor-user/getInquirySetting',  # 查询医生的服务设置
     'getDoctorByInquiryId': '/lyhcc/dhInquiry/getDoctorByInquiryId',  # 查询问诊的医生和问题详情
     'getPayById': '/lyhcc/dhPayment/getPayById',  # 查询问诊订单的支付状态
+    'getAskPayById': '/lyhcc/dhPayment/getAskPayById',  # 答疑订单详情
+
 }
 # 我的页面接口
 api_mypage = {
