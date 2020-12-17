@@ -19,7 +19,9 @@ common_data = {
     'profileId': 49,  # 就诊人id
     'questionId': 9755,  # 答疑id
     'leagueId': 28,  # 医联体id
-    'inquiryId': 274,  # 问诊id
+    'inquiryId': 316,  # 图文问诊订单id
+    'inquiryId_video': 318,  # 视频咨询订单id
+    'inquiryId_opinion': 317,  # 第二诊疗意见订单id
     'paymentId': 278,  # 支付id
     'prescriptionId': 219,  # 处方id
     'profileId': 96,  # 健康档案id

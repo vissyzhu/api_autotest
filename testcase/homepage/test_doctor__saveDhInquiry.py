@@ -102,6 +102,7 @@ class Test_saveDhInquiry(unittest.TestCase):
         confighttp.set_headers(header)
         confighttp.set_data(data)
         self.response = confighttp.post().json()
+        common_data['inquiryId_video'] = self.response['result']['inquiryId']
         self.check_result()
         self.assertEqual(self.result[0][4], 2, '服务类型不一致')
         self.assertIn('视频问诊', self.result[0][3], '视频问诊的病情描述不全')
@@ -131,6 +132,7 @@ class Test_saveDhInquiry(unittest.TestCase):
         confighttp.set_headers(header)
         confighttp.set_data(data)
         self.response = confighttp.post().json()
+        common_data['inquiryId_opinion'] = self.response['result']['inquiryId']
         self.check_result()
         self.assertEqual(self.result[0][4], 3, '服务类型不一致')
         self.assertIn('第二诊疗意见', self.result[0][3], '第二诊疗意见的病情描述不全')
