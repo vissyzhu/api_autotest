@@ -9,7 +9,7 @@
 # }
 # 线上数据
 common_data = {
-    'Authorization': 'FUnSNq2QXkaNE5KyphatPrEWoycb2958XNYdfiQ9QWg=',  # 根据用户openid生成
+    'Authorization': 'C1WksxhPq2mQ3xk3mYBsfVutk2PXkzDrmwiWpSoD2hQ=',  # 根据用户openid生成
     'mobile': '15250485783',  # 患者的手机号
     'teamId': 13,  # 团队id
     'hospitalId': 2541,  # 医院id
