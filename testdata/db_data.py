@@ -14,7 +14,7 @@ import pymysql
 # }
 #预发数据库
 db_data = {
-    "host": "predb.inlyh",
+    "host": "rm-bp1u0184m5k571433no.mysql.rds.aliyuncs.com",
     "port": 3306,
     "username": "liangyihui",
     "password": "ABcd1234",

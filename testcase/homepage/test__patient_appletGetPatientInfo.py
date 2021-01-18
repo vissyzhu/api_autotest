@@ -48,6 +48,6 @@ class Test_AppletGetPatientInfo(unittest.TestCase):
         self.assertEqual(self.response['status'], 0, '接口连接出错')
         self.assertEqual(self.response['result']['basicInfo']['patientId'], result[0][0], '患者id返回错误')
         # self.assertIn('liangyihui.net', self.response['result']['basicInfo']['headPortraitUrl'], '患者头像未返回')
-        self.assertIn('测试', self.response['result']['basicInfo']['nickName'], '患者昵称返回错误')
+        self.assertIn('vissy', self.response['result']['basicInfo']['nickName'], '患者昵称返回错误')
         self.assertEqual(self.response['result']['basicInfo']['tel'], result[0][2], '患者联系方式返回错误')
         self.assertEqual(self.response['result']['basicInfo']['attentions'], result[0][3], '患者关注的瘤种数据返回错误')
