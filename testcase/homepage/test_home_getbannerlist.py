@@ -34,5 +34,5 @@ class Test_GetBannerList(unittest.TestCase):
         # 结果验证
         self.assertEqual(self.response['status'], 0, "接口连接错误")
         self.assertLessEqual(1, self.response['result'][0]['id'], '首页banner返回的id不对')
-        self.assertIn('https://lyhccstatic.liangyihui.net/', self.response['result'][0]['picUrl'], '首页banner地址返回不对')
+        self.assertIn('http', self.response['result'][0]['picUrl'], '首页banner地址返回不对')
         self.assertLessEqual(1, len(self.response['result']), '首页banner未返回')

@@ -11,7 +11,7 @@
 #     'docId': 67725,  # 公开课id
 #     'patientId': 198890,  # 小程序用户id，动态获取
 #     'doctorId': 100585,  # 专家id
-#     'profileId': 154,  # 健康档案id
+#     'profileId': 154,  # 健康档案id,动态获取
 #     'questionId': 9755,  # 答疑id，动态获取
 #     'leagueId': 28,  # 医联体id，动态获取
 #     'inquiryId': 316,  # 图文问诊订单id
@@ -31,7 +31,7 @@ common_data = {
     'docId': 67725,  # 公开课id
     'patientId': 198890,  # 小程序用户id
     'doctorId': 146317,  # 专家id
-    'profileId': 49,  # 健康档案id
+    'profileId': 538,  # 健康档案id
     'questionId': 9755,  # 答疑id
     'leagueId': 28,  # 医联体id
     'inquiryId': 316,  # 图文问诊订单id

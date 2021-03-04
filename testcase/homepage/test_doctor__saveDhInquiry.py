@@ -54,6 +54,8 @@ class Test_saveDhInquiry(unittest.TestCase):
         self.doctorId = common_data['doctorId']
         self.profileId = common_data['profileId']
         self.patientId = common_data['patientId']
+        self.profileId = common_data['profileId']
+
         header = {
             'Authorization': '%s' % self.auth,
             'From-Platform': 'miniapp'

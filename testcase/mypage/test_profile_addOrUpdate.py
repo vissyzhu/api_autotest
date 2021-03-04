@@ -26,12 +26,14 @@ class Test_AddOrUpdate(unittest.TestCase):
     def test_addOrUpdate(self):
         self.auth = common_data['Authorization']
         self.patientId = common_data['patientId']
+        self.profileId = common_data['profileId']
+
         header = {
             'Authorization': '%s' % self.auth,
             'From-Platform': 'miniapp'
         }
         data = {
-            "id": 96,
+            "id": self.profileId,
             "name": "朱珣",
             "gender": 2,
             "mobile": "15250485783",

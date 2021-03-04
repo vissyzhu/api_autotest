@@ -189,9 +189,9 @@ function showOutput(id, name) {
 
 <div class='heading'>
 <h1>测试报告</h1>
-<p class='attribute'><strong>Start Time:</strong> 2021-01-18 16:10:09</p>
-<p class='attribute'><strong>Duration:</strong> 0:00:28.210308</p>
-<p class='attribute'><strong>Status:</strong> Pass 52 Failure 4 Error 7</p>
+<p class='attribute'><strong>Start Time:</strong> 2021-03-04 10:48:57</p>
+<p class='attribute'><strong>Duration:</strong> 0:00:20.528057</p>
+<p class='attribute'><strong>Status:</strong> Pass 62 Error 1</p>
 
 <p class='description' style="font-size: 15px">用例执行情况：</p>
 </div>
@@ -235,47 +235,22 @@ function showOutput(id, name) {
     <td colspan='5' align='center'>pass</td>
 </tr>
 
-<tr class='failClass'>
-    <td>homepage.test_center_getAppGistPage.Test_getAppGistPage</td>
+<tr class='passClass'>
+    <td>homepage.test__profile_getMyProfile.Test_GetMyProfile</td>
+    <td>1</td>
     <td>1</td>
     <td>0</td>
-    <td>1</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c2',1)">Detail</a></td>
 </tr>
 
-<tr id='ft2.1' class='none'>
-    <td class='failCase'><div class='testcase'>test_getAppGistPage</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft2.1')" >
-        fail</a>
-
-    <div id='div_ft2.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft2.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-ft2.1: Traceback (most recent call last):
-  File "/Users/vissy/PycharmProjects/lyhccapi_autotest/testcase/homepage/test_center_getAppGistPage.py", line 42, in test_getAppGistPage
-    self.check_result()
-  File "/Users/vissy/PycharmProjects/lyhccapi_autotest/testcase/homepage/test_center_getAppGistPage.py", line 46, in check_result
-    self.assertEqual(self.response['status'], 0, "接口连接错误")
-AssertionError: None != 0 : 接口连接错误
-
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
+<tr id='pt2.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_getMyProfile</div></td>
+    <td colspan='5' align='center'>pass</td>
 </tr>
 
 <tr class='passClass'>
-    <td>homepage.test_center_getAppSearchPage.Test_GetAppSearchPage</td>
+    <td>homepage.test_center_getAppGistPage.Test_getAppGistPage</td>
     <td>1</td>
     <td>1</td>
     <td>0</td>
@@ -284,6 +259,20 @@ AssertionError: None != 0 : 接口连接错误
 </tr>
 
 <tr id='pt3.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_getAppGistPage</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr class='passClass'>
+    <td>homepage.test_center_getAppSearchPage.Test_GetAppSearchPage</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c4',1)">Detail</a></td>
+</tr>
+
+<tr id='pt4.1' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_getAppSearchPage</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
@@ -294,10 +283,10 @@ AssertionError: None != 0 : 接口连接错误
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c4',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c5',1)">Detail</a></td>
 </tr>
 
-<tr id='pt4.1' class='hiddenRow'>
+<tr id='pt5.1' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_getCenterLabel</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
@@ -308,10 +297,10 @@ AssertionError: None != 0 : 接口连接错误
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c5',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c6',1)">Detail</a></td>
 </tr>
 
-<tr id='pt5.1' class='hiddenRow'>
+<tr id='pt6.1' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_getDisByCenter</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
@@ -322,10 +311,10 @@ AssertionError: None != 0 : 接口连接错误
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c6',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c7',1)">Detail</a></td>
 </tr>
 
-<tr id='pt6.1' class='hiddenRow'>
+<tr id='pt7.1' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_getDocumentList</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
@@ -336,10 +325,10 @@ AssertionError: None != 0 : 接口连接错误
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c7',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c8',1)">Detail</a></td>
 </tr>
 
-<tr id='pt7.1' class='hiddenRow'>
+<tr id='pt8.1' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_getModuleList</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
@@ -350,55 +339,16 @@ AssertionError: None != 0 : 接口连接错误
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c8',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c9',1)">Detail</a></td>
 </tr>
 
-<tr id='pt8.1' class='hiddenRow'>
+<tr id='pt9.1' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_getQuestionList</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
 
-<tr class='errorClass'>
-    <td>homepage.test_center_gistCenterDocuments.Test_GistCenterDocuments</td>
-    <td>1</td>
-    <td>0</td>
-    <td>0</td>
-    <td>1</td>
-    <td><a href="javascript:showClassDetail('c9',1)">Detail</a></td>
-</tr>
-
-<tr id='ft9.1' class='none'>
-    <td class='errorCase'><div class='testcase'>test_gistCenterDocuments</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft9.1')" >
-        error</a>
-
-    <div id='div_ft9.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft9.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-ft9.1: Traceback (most recent call last):
-  File "/Users/vissy/PycharmProjects/lyhccapi_autotest/testcase/homepage/test_center_gistCenterDocuments.py", line 43, in test_gistCenterDocuments
-    self.check_result()
-  File "/Users/vissy/PycharmProjects/lyhccapi_autotest/testcase/homepage/test_center_gistCenterDocuments.py", line 55, in check_result
-    self.assertLessEqual(1, self.response['result']['records'][0]['id'], '文章id未返回')
-IndexError: list index out of range
-
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr>
-
 <tr class='passClass'>
-    <td>homepage.test_center_gistCenterPage.Test_GistCenterPage</td>
+    <td>homepage.test_center_gistCenterDocuments.Test_GistCenterDocuments</td>
     <td>1</td>
     <td>1</td>
     <td>0</td>
@@ -407,6 +357,20 @@ IndexError: list index out of range
 </tr>
 
 <tr id='pt10.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_gistCenterDocuments</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr class='passClass'>
+    <td>homepage.test_center_gistCenterPage.Test_GistCenterPage</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c11',1)">Detail</a></td>
+</tr>
+
+<tr id='pt11.1' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_gistCenterPage</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
@@ -417,10 +381,10 @@ IndexError: list index out of range
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c11',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c12',1)">Detail</a></td>
 </tr>
 
-<tr id='pt11.1' class='hiddenRow'>
+<tr id='pt12.1' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_gistCenterTree</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
@@ -431,20 +395,20 @@ IndexError: list index out of range
     <td>3</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c12',3)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c13',3)">Detail</a></td>
 </tr>
 
-<tr id='pt12.1' class='hiddenRow'>
+<tr id='pt13.1' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_saveDhInquiry</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
 
-<tr id='pt12.2' class='hiddenRow'>
+<tr id='pt13.2' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_saveDhInquiry_opinion</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
 
-<tr id='pt12.3' class='hiddenRow'>
+<tr id='pt13.3' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_saveDhInquiry_video</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
@@ -455,10 +419,10 @@ IndexError: list index out of range
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c13',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c14',1)">Detail</a></td>
 </tr>
 
-<tr id='pt13.1' class='hiddenRow'>
+<tr id='pt14.1' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_getAppDocDocumentPage</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
@@ -469,10 +433,10 @@ IndexError: list index out of range
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c14',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c15',1)">Detail</a></td>
 </tr>
 
-<tr id='pt14.1' class='hiddenRow'>
+<tr id='pt15.1' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_getDoctorByInquiryId</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
@@ -483,10 +447,10 @@ IndexError: list index out of range
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c15',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c16',1)">Detail</a></td>
 </tr>
 
-<tr id='pt15.1' class='hiddenRow'>
+<tr id='pt16.1' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_getDoctorMainPage</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
@@ -497,10 +461,10 @@ IndexError: list index out of range
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c16',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c17',1)">Detail</a></td>
 </tr>
 
-<tr id='pt16.1' class='hiddenRow'>
+<tr id='pt17.1' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_getInquirySetting</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
@@ -511,10 +475,10 @@ IndexError: list index out of range
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c17',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c18',1)">Detail</a></td>
 </tr>
 
-<tr id='pt17.1' class='hiddenRow'>
+<tr id='pt18.1' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_getPayById</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
@@ -525,10 +489,10 @@ IndexError: list index out of range
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c18',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c19',1)">Detail</a></td>
 </tr>
 
-<tr id='pt18.1' class='hiddenRow'>
+<tr id='pt19.1' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_getAreaTree</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
@@ -539,10 +503,10 @@ IndexError: list index out of range
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c19',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c20',1)">Detail</a></td>
 </tr>
 
-<tr id='pt19.1' class='hiddenRow'>
+<tr id='pt20.1' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_getBosConDept</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
@@ -553,10 +517,10 @@ IndexError: list index out of range
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c20',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c21',1)">Detail</a></td>
 </tr>
 
-<tr id='pt20.1' class='hiddenRow'>
+<tr id='pt21.1' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_getDoctorList</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
@@ -567,79 +531,31 @@ IndexError: list index out of range
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c21',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c22',1)">Detail</a></td>
 </tr>
 
-<tr id='pt21.1' class='hiddenRow'>
+<tr id='pt22.1' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_getDocumentList</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
 
-<tr class='errorClass'>
+<tr class='passClass'>
     <td>homepage.test_document_collectDocument.Test_CollectDocument</td>
     <td>2</td>
+    <td>2</td>
     <td>0</td>
-    <td>1</td>
-    <td>1</td>
-    <td><a href="javascript:showClassDetail('c22',2)">Detail</a></td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c23',2)">Detail</a></td>
 </tr>
 
-<tr id='ft22.1' class='none'>
-    <td class='failCase'><div class='testcase'>test__collectDocument</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft22.1')" >
-        fail</a>
-
-    <div id='div_ft22.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft22.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-ft22.1: Traceback (most recent call last):
-  File "/Users/vissy/PycharmProjects/lyhccapi_autotest/testcase/homepage/test_document_collectDocument.py", line 42, in test__collectDocument
-    self.check_result()
-  File "/Users/vissy/PycharmProjects/lyhccapi_autotest/testcase/homepage/test_document_collectDocument.py", line 55, in check_result
-    self.assertEqual(self.response['status'], 0, "接口连接错误")
-AssertionError: 99 != 0 : 接口连接错误
-
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
+<tr id='pt23.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test__collectDocument</div></td>
+    <td colspan='5' align='center'>pass</td>
 </tr>
 
-<tr id='ft22.2' class='none'>
-    <td class='errorCase'><div class='testcase'>test_cancelCollectDocument</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft22.2')" >
-        error</a>
-
-    <div id='div_ft22.2' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft22.2').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-ft22.2: Traceback (most recent call last):
-  File "/Users/vissy/PycharmProjects/lyhccapi_autotest/testcase/homepage/test_document_collectDocument.py", line 76, in test_cancelCollectDocument
-    self.assertEqual(1, self.result[0][7], '取消收藏失败')
-IndexError: tuple index out of range
-
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
+<tr id='pt23.2' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_cancelCollectDocument</div></td>
+    <td colspan='5' align='center'>pass</td>
 </tr>
 
 <tr class='passClass'>
@@ -648,10 +564,10 @@ IndexError: tuple index out of range
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c23',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c24',1)">Detail</a></td>
 </tr>
 
-<tr id='pt23.1' class='hiddenRow'>
+<tr id='pt24.1' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_getDocumentDetail</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
@@ -662,55 +578,16 @@ IndexError: tuple index out of range
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c24',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c25',1)">Detail</a></td>
 </tr>
 
-<tr id='pt24.1' class='hiddenRow'>
+<tr id='pt25.1' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_getAppHomePage</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
 
-<tr class='failClass'>
-    <td>homepage.test_home_getbannerlist.Test_GetBannerList</td>
-    <td>1</td>
-    <td>0</td>
-    <td>1</td>
-    <td>0</td>
-    <td><a href="javascript:showClassDetail('c25',1)">Detail</a></td>
-</tr>
-
-<tr id='ft25.1' class='none'>
-    <td class='failCase'><div class='testcase'>test_getbannerlist</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft25.1')" >
-        fail</a>
-
-    <div id='div_ft25.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft25.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-ft25.1: Traceback (most recent call last):
-  File "/Users/vissy/PycharmProjects/lyhccapi_autotest/testcase/homepage/test_home_getbannerlist.py", line 31, in test_getbannerlist
-    self.check_result()
-  File "/Users/vissy/PycharmProjects/lyhccapi_autotest/testcase/homepage/test_home_getbannerlist.py", line 37, in check_result
-    self.assertIn('https://lyhccstatic.liangyihui.net/', self.response['result'][0]['picUrl'], '首页banner地址返回不对')
-AssertionError: 'https://lyhccstatic.liangyihui.net/' not found in 'http://7xr1le.com2.z0.glb.qiniucdn.com/patient/1610948575584?e=2147483647&amp;token=j4SBYhetYrc0sjLhIviVMGTHqzUrH6Zuh7dD0Jxh:bOebJcoeVmxOJ2IbcKyfQAugbtU=' : 首页banner地址返回不对
-
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr>
-
 <tr class='passClass'>
-    <td>homepage.test_home_gistCenterDocuments.Test_GistCenterDocuments</td>
+    <td>homepage.test_home_getbannerlist.Test_GetBannerList</td>
     <td>1</td>
     <td>1</td>
     <td>0</td>
@@ -719,6 +596,20 @@ AssertionError: 'https://lyhccstatic.liangyihui.net/' not found in 'http://7xr1l
 </tr>
 
 <tr id='pt26.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_getbannerlist</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr class='passClass'>
+    <td>homepage.test_home_gistCenterDocuments.Test_GistCenterDocuments</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c27',1)">Detail</a></td>
+</tr>
+
+<tr id='pt27.1' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_gistCenterDocuments</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
@@ -729,10 +620,10 @@ AssertionError: 'https://lyhccstatic.liangyihui.net/' not found in 'http://7xr1l
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c27',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c28',1)">Detail</a></td>
 </tr>
 
-<tr id='pt27.1' class='hiddenRow'>
+<tr id='pt28.1' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_hospitallist</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
@@ -743,10 +634,10 @@ AssertionError: 'https://lyhccstatic.liangyihui.net/' not found in 'http://7xr1l
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c28',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c29',1)">Detail</a></td>
 </tr>
 
-<tr id='pt28.1' class='hiddenRow'>
+<tr id='pt29.1' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_getAppHospitalDocumentPage</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
@@ -757,10 +648,10 @@ AssertionError: 'https://lyhccstatic.liangyihui.net/' not found in 'http://7xr1l
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c29',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c30',1)">Detail</a></td>
 </tr>
 
-<tr id='pt29.1' class='hiddenRow'>
+<tr id='pt30.1' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_getAppHospitalMainPage</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
@@ -771,30 +662,16 @@ AssertionError: 'https://lyhccstatic.liangyihui.net/' not found in 'http://7xr1l
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c30',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c31',1)">Detail</a></td>
 </tr>
 
-<tr id='pt30.1' class='hiddenRow'>
+<tr id='pt31.1' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_selectHosMainPageEvent</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
 
 <tr class='passClass'>
-    <td>homepage.test_league_findLeagueById.Test_FindLeagueById</td>
-    <td>1</td>
-    <td>1</td>
-    <td>0</td>
-    <td>0</td>
-    <td><a href="javascript:showClassDetail('c31',1)">Detail</a></td>
-</tr>
-
-<tr id='pt31.1' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_findLeagueById</div></td>
-    <td colspan='5' align='center'>pass</td>
-</tr>
-
-<tr class='passClass'>
-    <td>homepage.test_league_findLeaguePage.Test_FindLeaguePage</td>
+    <td>homepage.test_league__list.Test_FindLeaguePage</td>
     <td>1</td>
     <td>1</td>
     <td>0</td>
@@ -808,7 +685,7 @@ AssertionError: 'https://lyhccstatic.liangyihui.net/' not found in 'http://7xr1l
 </tr>
 
 <tr class='passClass'>
-    <td>homepage.test_league_getLeagueDoc.Test_GetLeagueDoc</td>
+    <td>homepage.test_league_findLeagueById.Test_FindLeagueById</td>
     <td>1</td>
     <td>1</td>
     <td>0</td>
@@ -817,6 +694,20 @@ AssertionError: 'https://lyhccstatic.liangyihui.net/' not found in 'http://7xr1l
 </tr>
 
 <tr id='pt33.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_findLeagueById</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr class='passClass'>
+    <td>homepage.test_league_getLeagueDoc.Test_GetLeagueDoc</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c34',1)">Detail</a></td>
+</tr>
+
+<tr id='pt34.1' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_getLeagueDoc</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
@@ -827,10 +718,10 @@ AssertionError: 'https://lyhccstatic.liangyihui.net/' not found in 'http://7xr1l
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c34',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c35',1)">Detail</a></td>
 </tr>
 
-<tr id='pt34.1' class='hiddenRow'>
+<tr id='pt35.1' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_getLeagueHos</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
@@ -841,55 +732,16 @@ AssertionError: 'https://lyhccstatic.liangyihui.net/' not found in 'http://7xr1l
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c35',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c36',1)">Detail</a></td>
 </tr>
 
-<tr id='pt35.1' class='hiddenRow'>
+<tr id='pt36.1' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_question_getQuestionList</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
 
-<tr class='errorClass'>
-    <td>homepage.test_question_addQuestion.Test_AddQuestion</td>
-    <td>1</td>
-    <td>0</td>
-    <td>0</td>
-    <td>1</td>
-    <td><a href="javascript:showClassDetail('c36',1)">Detail</a></td>
-</tr>
-
-<tr id='ft36.1' class='none'>
-    <td class='errorCase'><div class='testcase'>test_addQuestion</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft36.1')" >
-        error</a>
-
-    <div id='div_ft36.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft36.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-ft36.1: Traceback (most recent call last):
-  File "/Users/vissy/PycharmProjects/lyhccapi_autotest/testcase/homepage/test_question_addQuestion.py", line 79, in test_addQuestion
-    self.check_result()
-  File "/Users/vissy/PycharmProjects/lyhccapi_autotest/testcase/homepage/test_question_addQuestion.py", line 114, in check_result
-    self.assertIn('医生定向提问+问题描述', self.result[0][0], '问题描述不一致')
-IndexError: tuple index out of range
-
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr>
-
 <tr class='passClass'>
-    <td>homepage.test_question_findListByPage.Test_FindListByPage</td>
+    <td>homepage.test_question_addQuestion.Test_AddQuestion</td>
     <td>1</td>
     <td>1</td>
     <td>0</td>
@@ -898,6 +750,20 @@ IndexError: tuple index out of range
 </tr>
 
 <tr id='pt37.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_addQuestion</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr class='passClass'>
+    <td>homepage.test_question_findListByPage.Test_FindListByPage</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c38',1)">Detail</a></td>
+</tr>
+
+<tr id='pt38.1' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_findListByPage</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
@@ -908,10 +774,10 @@ IndexError: tuple index out of range
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c38',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c39',1)">Detail</a></td>
 </tr>
 
-<tr id='pt38.1' class='hiddenRow'>
+<tr id='pt39.1' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_getQuestionDetail</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
@@ -922,10 +788,10 @@ IndexError: tuple index out of range
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c39',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c40',1)">Detail</a></td>
 </tr>
 
-<tr id='pt39.1' class='hiddenRow'>
+<tr id='pt40.1' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_getTeamPage</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
@@ -936,10 +802,10 @@ IndexError: tuple index out of range
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c40',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c41',1)">Detail</a></td>
 </tr>
 
-<tr id='pt40.1' class='hiddenRow'>
+<tr id='pt41.1' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_getTeamMainPage</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
@@ -950,81 +816,31 @@ IndexError: tuple index out of range
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c41',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c42',1)">Detail</a></td>
 </tr>
 
-<tr id='pt41.1' class='hiddenRow'>
+<tr id='pt42.1' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_thumbUp</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
 
-<tr class='errorClass'>
+<tr class='passClass'>
     <td>mypage.test_followed_getMyFollewed.Test_GetMyFollowed</td>
     <td>2</td>
-    <td>0</td>
-    <td>0</td>
     <td>2</td>
-    <td><a href="javascript:showClassDetail('c42',2)">Detail</a></td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c43',2)">Detail</a></td>
 </tr>
 
-<tr id='ft42.1' class='none'>
-    <td class='errorCase'><div class='testcase'>test_getMyFollowed_dept</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft42.1')" >
-        error</a>
-
-    <div id='div_ft42.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft42.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-ft42.1: Traceback (most recent call last):
-  File "/Users/vissy/PycharmProjects/lyhccapi_autotest/testcase/mypage/test_followed_getMyFollewed.py", line 54, in test_getMyFollowed_dept
-    self.check_result()
-  File "/Users/vissy/PycharmProjects/lyhccapi_autotest/testcase/mypage/test_followed_getMyFollewed.py", line 60, in check_result
-    self.assertNotEqual(None, self.response['result'][0]['hospital'], '我关注的医院名未显示')
-IndexError: list index out of range
-
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
+<tr id='pt43.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_getMyFollowed_dept</div></td>
+    <td colspan='5' align='center'>pass</td>
 </tr>
 
-<tr id='ft42.2' class='none'>
-    <td class='errorCase'><div class='testcase'>test_getMyFollowed_hospital</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft42.2')" >
-        error</a>
-
-    <div id='div_ft42.2' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft42.2').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-ft42.2: Traceback (most recent call last):
-  File "/Users/vissy/PycharmProjects/lyhccapi_autotest/testcase/mypage/test_followed_getMyFollewed.py", line 38, in test_getMyFollowed_hospital
-    self.check_result()
-  File "/Users/vissy/PycharmProjects/lyhccapi_autotest/testcase/mypage/test_followed_getMyFollewed.py", line 60, in check_result
-    self.assertNotEqual(None, self.response['result'][0]['hospital'], '我关注的医院名未显示')
-IndexError: list index out of range
-
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
+<tr id='pt43.2' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_getMyFollowed_hospital</div></td>
+    <td colspan='5' align='center'>pass</td>
 </tr>
 
 <tr class='passClass'>
@@ -1033,55 +849,16 @@ IndexError: list index out of range
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c43',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c44',1)">Detail</a></td>
 </tr>
 
-<tr id='pt43.1' class='hiddenRow'>
+<tr id='pt44.1' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_getMyFollowedDoctor</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
 
-<tr class='errorClass'>
-    <td>mypage.test_getHospitalQuestion.Test_GetHospitalQuestion</td>
-    <td>1</td>
-    <td>0</td>
-    <td>0</td>
-    <td>1</td>
-    <td><a href="javascript:showClassDetail('c44',1)">Detail</a></td>
-</tr>
-
-<tr id='ft44.1' class='none'>
-    <td class='errorCase'><div class='testcase'>test_getHospitalQuestion</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft44.1')" >
-        error</a>
-
-    <div id='div_ft44.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft44.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-ft44.1: Traceback (most recent call last):
-  File "/Users/vissy/PycharmProjects/lyhccapi_autotest/testcase/mypage/test_getHospitalQuestion.py", line 39, in test_getHospitalQuestion
-    self.check_result()
-  File "/Users/vissy/PycharmProjects/lyhccapi_autotest/testcase/mypage/test_getHospitalQuestion.py", line 52, in check_result
-    self.assertEqual(self.response['result']['records'][0]['patientCondition'], result[0][0], '病情描述不一致')
-IndexError: tuple index out of range
-
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr>
-
 <tr class='passClass'>
-    <td>mypage.test_getMyCollectedDocument.Test_GetMyCollectedDocument</td>
+    <td>mypage.test_getHospitalQuestion.Test_GetHospitalQuestion</td>
     <td>1</td>
     <td>1</td>
     <td>0</td>
@@ -1090,6 +867,20 @@ IndexError: tuple index out of range
 </tr>
 
 <tr id='pt45.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_getHospitalQuestion</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr class='passClass'>
+    <td>mypage.test_getMyCollectedDocument.Test_GetMyCollectedDocument</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c46',1)">Detail</a></td>
+</tr>
+
+<tr id='pt46.1' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_getMyCollectedDocument</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
@@ -1100,20 +891,20 @@ IndexError: tuple index out of range
     <td>3</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c46',3)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c47',3)">Detail</a></td>
 </tr>
 
-<tr id='pt46.1' class='hiddenRow'>
+<tr id='pt47.1' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_cancelInquiry</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
 
-<tr id='pt46.2' class='hiddenRow'>
+<tr id='pt47.2' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_cancelInquiry_opinion</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
 
-<tr id='pt46.3' class='hiddenRow'>
+<tr id='pt47.3' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_cancelInquiry_video</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
@@ -1124,10 +915,10 @@ IndexError: tuple index out of range
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c47',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c48',1)">Detail</a></td>
 </tr>
 
-<tr id='pt47.1' class='hiddenRow'>
+<tr id='pt48.1' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_delPayment</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
@@ -1138,15 +929,15 @@ IndexError: tuple index out of range
     <td>2</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c48',2)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c49',2)">Detail</a></td>
 </tr>
 
-<tr id='pt48.1' class='hiddenRow'>
+<tr id='pt49.1' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_getPatientPayList</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
 
-<tr id='pt48.2' class='hiddenRow'>
+<tr id='pt49.2' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_getPatientPayList_ask</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
@@ -1157,55 +948,16 @@ IndexError: tuple index out of range
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c49',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c50',1)">Detail</a></td>
 </tr>
 
-<tr id='pt49.1' class='hiddenRow'>
+<tr id='pt50.1' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_getAskPayById</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
 
-<tr class='failClass'>
-    <td>mypage.test_patient_appletGetPatientInfo.Test_AppletGetPatientInfo</td>
-    <td>1</td>
-    <td>0</td>
-    <td>1</td>
-    <td>0</td>
-    <td><a href="javascript:showClassDetail('c50',1)">Detail</a></td>
-</tr>
-
-<tr id='ft50.1' class='none'>
-    <td class='failCase'><div class='testcase'>test_appletGetPatientInfo</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft50.1')" >
-        fail</a>
-
-    <div id='div_ft50.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft50.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-ft50.1: Traceback (most recent call last):
-  File "/Users/vissy/PycharmProjects/lyhccapi_autotest/testcase/mypage/test_patient_appletGetPatientInfo.py", line 38, in test_appletGetPatientInfo
-    self.check_result()
-  File "/Users/vissy/PycharmProjects/lyhccapi_autotest/testcase/mypage/test_patient_appletGetPatientInfo.py", line 51, in check_result
-    self.assertIn('测试', self.response['result']['basicInfo']['nickName'], '患者昵称返回错误')
-AssertionError: '测试' not found in 'vissy小朱' : 患者昵称返回错误
-
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr>
-
 <tr class='passClass'>
-    <td>mypage.test_patient_updatePatient.Test_UpdatePatient</td>
+    <td>mypage.test_patient_appletGetPatientInfo.Test_AppletGetPatientInfo</td>
     <td>1</td>
     <td>1</td>
     <td>0</td>
@@ -1214,6 +966,20 @@ AssertionError: '测试' not found in 'vissy小朱' : 患者昵称返回错误
 </tr>
 
 <tr id='pt51.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_appletGetPatientInfo</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr class='passClass'>
+    <td>mypage.test_patient_updatePatient.Test_UpdatePatient</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c52',1)">Detail</a></td>
+</tr>
+
+<tr id='pt52.1' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_updatePatient</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
@@ -1224,25 +990,25 @@ AssertionError: '测试' not found in 'vissy小朱' : 患者昵称返回错误
     <td>0</td>
     <td>0</td>
     <td>1</td>
-    <td><a href="javascript:showClassDetail('c52',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c53',1)">Detail</a></td>
 </tr>
 
-<tr id='ft52.1' class='none'>
+<tr id='ft53.1' class='none'>
     <td class='errorCase'><div class='testcase'>test_getPrePage</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft52.1')" >
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft53.1')" >
         error</a>
 
-    <div id='div_ft52.1' class="popup_window">
+    <div id='div_ft53.1' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft52.1').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft53.1').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-ft52.1: Traceback (most recent call last):
+ft53.1: Traceback (most recent call last):
   File "/Users/vissy/PycharmProjects/lyhccapi_autotest/testcase/mypage/test_prescription_getPrePage.py", line 38, in test_getPrePage
     common_data['prescriptionSn'] = self.response['result']['records'][0]['id']
 IndexError: list index out of range
@@ -1261,10 +1027,10 @@ IndexError: list index out of range
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c53',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c54',1)">Detail</a></td>
 </tr>
 
-<tr id='pt53.1' class='hiddenRow'>
+<tr id='pt54.1' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_getPrescriptionById</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
@@ -1275,25 +1041,11 @@ IndexError: list index out of range
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c54',1)">Detail</a></td>
-</tr>
-
-<tr id='pt54.1' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_addOrUpdate</div></td>
-    <td colspan='5' align='center'>pass</td>
-</tr>
-
-<tr class='passClass'>
-    <td>mypage.test_profile_getMyProfile.Test_GetMyProfile</td>
-    <td>1</td>
-    <td>1</td>
-    <td>0</td>
-    <td>0</td>
     <td><a href="javascript:showClassDetail('c55',1)">Detail</a></td>
 </tr>
 
 <tr id='pt55.1' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_getMyProfile</div></td>
+    <td class='none'><div class='testcase'>test_addOrUpdate</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
 
@@ -1314,9 +1066,9 @@ IndexError: list index out of range
 <tr id='total_row'>
     <td>Total</td>
     <td>63</td>
-    <td>52</td>
-    <td>4</td>
-    <td>7</td>
+    <td>62</td>
+    <td>0</td>
+    <td>1</td>
     <td>&nbsp;</td>
 </tr>
 </table>

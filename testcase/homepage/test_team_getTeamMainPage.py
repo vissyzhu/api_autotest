@@ -24,11 +24,18 @@ class Test_GetTeamMainPage(unittest.TestCase):
 
     def test_getTeamMainPage(self):
         self.teamId = common_data['teamId']
+        self.auth = common_data['Authorization']
+        header = {
+            'Authorization': '%s' % self.auth,
+            'From-Platform': 'miniapp'
+        }
         data = {
             "teamId": "%s" % self.teamId,
             "index": 1,
-            "size": 20
+            "size": 9
         }
+
+        confighttp.set_headers(header)
         confighttp.set_data(data)
         self.response = confighttp.post().json()
         self.check_result()

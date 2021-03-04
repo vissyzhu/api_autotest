@@ -36,7 +36,7 @@ class Test_GetMyFollowed(unittest.TestCase):
         confighttp.set_data(data)
         self.response = confighttp.post().json()
         self.check_result()
-        self.assertNotEqual(None, self.response['result'][0]['disease'], '我关注的医院擅长瘤种未显示')
+        self.assertNotEqual(None, self.response['result'][0]['hospital'], '我关注的医院擅长瘤种未显示')
 
     # 科室列表
     def test_getMyFollowed_dept(self):

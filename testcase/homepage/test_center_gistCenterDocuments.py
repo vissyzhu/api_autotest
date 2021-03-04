@@ -33,7 +33,7 @@ class Test_GistCenterDocuments(unittest.TestCase):
             "index": 1,
             "size": 3,
             "centerId": "%s" % self.centerId,
-            "type": 1534,
+            "type": 87,
             "all": False,
             "app": True
         }

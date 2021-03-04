@@ -33,7 +33,7 @@ class Test_UpdatePatient(unittest.TestCase):
         }
         data = {
             "picUrl": "http://7xr5oh.com2.z0.glb.qiniucdn.com/data/1603188499136?e=2147483647&token=j4SBYhetYrc0sjLhIviVMGTHqzUrH6Zuh7dD0Jxh:Pj1azF6nc5k5bTPdM2KUiQt6_Hs=",
-            "nickName": "昵称测试+lyhautotest" + self.date,
+            "nickName": "vissy昵称测试+lyhautotest" + self.date,
             "attentions": "甲状腺癌,胃肠间质瘤GIST,肝癌"
         }
         confighttp.set_headers(header)

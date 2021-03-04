@@ -14,7 +14,7 @@ confighttp = ConfigHttp()
 
 class Test_GetMyProfile(unittest.TestCase):
     '''
-    获取我的健康档案
+    获取我的健康档案,先获取档案id，便于提交服务订单
     '''
 
     def __init__(self, *args, **kwargs):
