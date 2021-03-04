@@ -13,4 +13,4 @@ if __name__ == '__main__':
     runner = result[0]
     runner.run(discover)
     result[1].close()
-    send_email('result.html')
+    # send_email('result.html')

@@ -56,3 +56,6 @@ class Test_getInquirySetting(unittest.TestCase):
         self.assertEqual(self.response['result']['opinionAmount'], result[0][10], '第二诊疗意见设置的价格不一致')
         self.assertEqual(self.response['result']['questionSwitch'], result[0][11], '一问一答开关设置不一致')
         self.assertEqual(self.response['result']['questionAmount'], result[0][12], '一问一答设置的价格不一致')
+        self.assertEqual(self.response['result']['mobileConsulSwitch'], result[0][17], '电话咨询开关设置不一致')
+        self.assertEqual(self.response['result']['mobileConsulAmount'], result[0][18], '电话咨询设置的价格不一致')
+        self.assertEqual(self.response['result']['mobileConsulDuration'], result[0][19], '电话咨询设置的时间不一致')
