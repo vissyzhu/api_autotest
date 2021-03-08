@@ -19,6 +19,7 @@ def send_email(newfile):
     f.close()
     today = time.strftime('%Y-%m-%d')
     smtpserver = email_data['smtpserver']
+    title = email_data['title']
     user = email_data['user']
     password = email_data['password']
     sender = email_data['sender']
@@ -26,7 +27,7 @@ def send_email(newfile):
     cc = email_data['cc']
 
     # 发送邮件主题
-    subject = '良医汇互联网医院小程序api测试报告%s' % today
+    subject = title + 'api测试报告%s' % today
     msg = MIMEMultipart('mixed')
     msg_html1 = MIMEText(mail_body,
                          'html', 'utf-8')  # 邮件内容
